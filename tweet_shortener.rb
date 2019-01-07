@@ -16,7 +16,7 @@ def dictionary(words)
   words.each do |word|
     dict.each do |short_word, long_words|
       long_words.each do |long_word|
-        if word == long_word
+        if word.upcase == long_word.upcase
           word = short_word
         end
       end
