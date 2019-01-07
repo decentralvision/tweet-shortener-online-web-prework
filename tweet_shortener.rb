@@ -1,5 +1,6 @@
 # Write your code here.
 def dictionary(words)
-  
+  words.collect do |word|
+    
 def word_substituter(tweet)
-  tweet.split(' ')
+  dictionary(tweet.split(' '))
