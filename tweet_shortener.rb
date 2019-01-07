@@ -11,7 +11,7 @@ dict = {
 
 def dictionary(words)
   words.collect do |word|
-    if dict.contains
+    dict.collect do |key, value|
 
 def word_substituter(tweet)
   dictionary(tweet.split(' ')).join(' ')
