@@ -4,10 +4,12 @@ dict = {
   '2' => ['to', 'two', 'too'],
   '4' => ['for', 'four'],
   'b' => ['be'],
-  'you'
+  'u' => ['you'],
+  '@' => ['at'],
+  '&' => ['and']
 }
 def dictionary(words)
   words.collect do |word|
-    
+
 def word_substituter(tweet)
   dictionary(tweet.split(' ')).join(' ')
