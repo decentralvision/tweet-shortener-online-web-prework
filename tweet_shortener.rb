@@ -14,10 +14,10 @@ def dictionary(words)
   }
 
   words.collect do |word|
-    dict.each do |short_word, long_word|
-      long_word.each do |long_word|
+    dict.each do |short_word, long_words|
+      long_words.each do |long_word|
         if word == long_word
-          word = long_word.key
+          word = long_words.key
         end
       end
     end
