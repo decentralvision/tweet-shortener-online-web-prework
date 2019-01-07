@@ -12,13 +12,14 @@ def dictionary(words)
     '@' => ['at'],
     '&' => ['and']
   }
-  short_tweet
+  short_tweet = []
   words.each do |word|
     dict.each do |short_word, long_words|
       long_words.each do |long_word|
         if word == long_word
-          word = short_word
-        end
+          short_tweet.push(short_word)
+        else 
+          short_tweet.push(word)
       end
     end
   end
