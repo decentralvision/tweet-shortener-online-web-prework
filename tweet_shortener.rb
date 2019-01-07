@@ -12,7 +12,7 @@ def dictionary(words)
     '@' => ['at'],
     '&' => ['and']
   }
-
+  short_tweet
   words.each do |word|
     dict.each do |short_word, long_words|
       long_words.each do |long_word|
@@ -22,6 +22,7 @@ def dictionary(words)
       end
     end
   end
+
 end
 
 def word_substituter(tweet)
