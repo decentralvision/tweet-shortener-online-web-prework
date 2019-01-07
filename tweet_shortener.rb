@@ -17,7 +17,7 @@ def dictionary(words)
     dict.each do |short_word, long_words|
       long_words.each do |long_word|
         if word == long_word
-          word = short_word.key
+          word = short_word
         end
       end
     end
