@@ -19,12 +19,10 @@ def dictionary(words)
         if word == long_word
           short_tweet.push(short_word)
           # puts "found #{long_word} and #{word}"
-        else
-          short_tweet.push(word)
-          # puts "no math #{long_word} and #{word}"
         end
       end
     end
+    short_tweet.push(word)
   end
   short_tweet
 end
