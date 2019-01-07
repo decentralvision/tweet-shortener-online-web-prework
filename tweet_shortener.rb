@@ -40,7 +40,8 @@ def selective_tweet_shortener(tweets)
   tweets.collect do |tweet|
     if tweet.size > 140
       word_substituter(tweet)
-    else
+    elsif tweet.size < 120 
       tweet
     end
+  end
 end
