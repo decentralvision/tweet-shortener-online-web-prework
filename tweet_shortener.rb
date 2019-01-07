@@ -12,7 +12,7 @@ dict = {
 def dictionary(words)
   words.each do |word|
     dict.each do |key, value|
-
+      value.each do |
 
 def word_substituter(tweet)
   dictionary(tweet.split(' ')).join(' ')
