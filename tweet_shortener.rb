@@ -18,10 +18,10 @@ def dictionary(words)
       long_words.each do |long_word|
         if word == long_word
           short_tweet.push(short_word)
-          puts "found #{long_word} and #{word}"
+          # puts "found #{long_word} and #{word}"
         else
           short_tweet.push(word)
-          puts "no math #{long_word} and #{word}"
+          # puts "no math #{long_word} and #{word}"
         end
       end
     end
