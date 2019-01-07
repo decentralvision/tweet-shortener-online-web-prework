@@ -2,7 +2,7 @@
 
 
 def dictionary(words)
-  
+
   dict = {
     'hi' => ['hello'],
     '2' => ['to', 'two', 'too'],
