@@ -18,8 +18,9 @@ def dictionary(words)
       long_words.each do |long_word|
         if word == long_word
           short_tweet.push(short_word)
-        else 
+        else
           short_tweet.push(word)
+        end
       end
     end
   end
