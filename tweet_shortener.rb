@@ -10,9 +10,15 @@ dict = {
 }
 
 def dictionary(words)
-  words.each do |word|
+  words.collect do |word|
     dict.each do |short_word, long_word|
       value.each do |long_word|
+        if word == long_word
+          word = long_word.key
+        end
+      end
+    end
+  end
 
 def word_substituter(tweet)
   dictionary(tweet.split(' ')).join(' ')
