@@ -16,11 +16,12 @@ def dictionary(words)
   words.each do |word|
     dict.each do |short_word, long_words|
       long_words.each do |long_word|
-        puts "comparing #{long_word} and #{word}"
         if word == long_word
           short_tweet.push(short_word)
+          puts "found #{long_word} and #{word}"
         else
           short_tweet.push(word)
+          puts "no math #{long_word} and #{word}"
         end
       end
     end
