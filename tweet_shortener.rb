@@ -11,8 +11,8 @@ dict = {
 
 def dictionary(words)
   words.each do |word|
-    dict.each do |key, value|
-      value.each do |
+    dict.each do |short_word, long_word|
+      value.each do |long_word|
 
 def word_substituter(tweet)
   dictionary(tweet.split(' ')).join(' ')
