@@ -18,7 +18,6 @@ def dictionary(words)
       long_words.each do |long_word|
         if word == long_word
           word = short_word
-          # puts "found #{long_word} and #{word}"
         end
       end
     end
