@@ -13,7 +13,7 @@ def dictionary(words)
     '&' => ['and']
   }
 
-  words.collect do |word|
+  words.each do |word|
     dict.each do |short_word, long_words|
       long_words.each do |long_word|
         if word == long_word
