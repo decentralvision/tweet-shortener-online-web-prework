@@ -26,7 +26,7 @@ def dictionary(words)
       end
     end
   end
-
+  short_tweet
 end
 
 def word_substituter(tweet)
