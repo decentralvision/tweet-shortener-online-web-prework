@@ -8,8 +8,10 @@ dict = {
   '@' => ['at'],
   '&' => ['and']
 }
+
 def dictionary(words)
   words.collect do |word|
+    if dict.contains
 
 def word_substituter(tweet)
   dictionary(tweet.split(' ')).join(' ')
